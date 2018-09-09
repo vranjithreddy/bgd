@@ -1,0 +1,19 @@
+{
+    "env_vars": {
+        "variable": "value"
+    },
+    "image": "bgdtest:latest",
+    "container": "bgd1",
+    "ports": {
+        "5000/tcp":5000 
+    },
+    "initial_deployment": {
+        "ports": {
+           "5000/tcp": 32210
+         } 
+    },
+    "healthCheck": {
+        "port": "32210",
+        "path": "/"
+    }
+} 
