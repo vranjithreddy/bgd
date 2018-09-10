@@ -1,12 +1,6 @@
-Docker Fundamentals WebApp
-==========================
+Blue-Green Deployment
+Steps
 
-The Docker Fundamentals repository contains the example Hello World Python WebApp
-
-## License
-
-Apache 2.0
-
-## Copyright
-
-Copyright Docker Inc Education Team 2014 <education@docker.com>
+--> Its creates a random container on the given port
+--> Checks on HelathCheck for 30 sec
+--> If its good then it will remove the container and creates new with name specified on paramers.json
